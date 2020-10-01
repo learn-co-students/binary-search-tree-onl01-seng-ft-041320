@@ -23,7 +23,8 @@ class BST
 
   def each(&block)
     left.each(&block) if left
-    block.call(data)
+    #block.call(data) same as yield data
+    yield self.data
     right.each(&block) if right
   end
 end
