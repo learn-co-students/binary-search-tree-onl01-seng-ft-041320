@@ -15,6 +15,10 @@ class BST
     end
   end
 
+
+  #  To figure out how to use &parameter ->
+  #  https://medium.com/@sologoubalex/parameter-with-ampersand-operator-in-ruby-6a6a7fd666d5
+
   def each(&block)
     left.each(&block) if left
     block.call(data)
