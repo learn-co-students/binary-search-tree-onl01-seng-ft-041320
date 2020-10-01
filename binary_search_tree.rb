@@ -17,7 +17,9 @@ class BST
 
 
   #  To figure out how to use &parameter ->
-  #  https://medium.com/@sologoubalex/parameter-with-ampersand-operator-in-ruby-6a6a7fd666d5
+  # 1) https://medium.com/@sologoubalex/parameter-with-ampersand-operator-in-ruby-6a6a7fd666d5
+  # 2) https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/
+
 
   def each(&block)
     left.each(&block) if left
